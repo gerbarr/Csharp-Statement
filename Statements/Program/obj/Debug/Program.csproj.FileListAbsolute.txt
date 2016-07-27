@@ -1,0 +1,2 @@
+C:\CENFOTEC\Csharp-Statement\Statements\Program\bin\Debug\Program.exe.config
+C:\CENFOTEC\Csharp-Statement\Statements\Program\obj\Debug\Program.csprojResolveAssemblyReference.cache
