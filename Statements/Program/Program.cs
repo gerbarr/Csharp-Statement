@@ -13,25 +13,27 @@ namespace Program
             bool proceed = true;
             while (proceed)
             {
-                char selection = printmenu();
-                switch (selection)
+                char selecction = printMenu();
+                switch (selecction)
                 {
                     case 'a':
-                        addvalues();
+                        addValues();
                         break;
                     case 'b':
                         concatenateStrings();
+                        break;
                     case 'c':
                         loopANumber();
                         break;
                     case 'd':
                         proceed = false;
+                        Console.WriteLine("Adios");
+                        Console.ReadKey();
                         break;
                     default:
-                        Console.WriteLine("opcion incorrecta");
+                        Console.WriteLine("Opción incorrecta.");
                         break;
                 }
-                Console.WriteLine("Adios");
             }
         }
 
@@ -45,23 +47,20 @@ namespace Program
             throw new NotImplementedException();
         }
 
-        private static void addvalues()
+        private static void addValues()
         {
             throw new NotImplementedException();
         }
 
-        static char printmenu()
+        static char printMenu()
         {
-            Console.WriteLine("Seleccione una opcion:");
+            Console.WriteLine("Seleccione una opción:");
             Console.WriteLine("a-Sumar dos valores.");
             Console.WriteLine("b-Concatenar dos strings.");
-            Console.WriteLine("c-Iterar un numero.");
+            Console.WriteLine("c-Iterar un número.");
             Console.WriteLine("d-Salir.");
             char option = (char)Console.Read();
             Console.WriteLine();
             return option;
-
-
         }
     }
-}

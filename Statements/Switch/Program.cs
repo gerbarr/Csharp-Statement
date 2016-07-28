@@ -24,8 +24,8 @@ namespace Switch
                 case 7 - 4:
                     Console.WriteLine("3");
                     break;
-                default:
-                    Console.writeline("otro valor");
+                //default:
+                //    Console.writeline("otro valor");
 
                     Console.ReadKey();
              
